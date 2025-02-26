@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InterActive Boxes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div class="container">
+        <h2>YAY! It's BOGO</h2>
+
+        <div class="option">
+            <input type="radio" name="quantity" id="one-unit" onclick="updatePrice(900, 1)">
+            <label for="one-unit">
+                <span>1 Unit</span> <span class="discount">10% Off</span>
+                <span class="price">Rs.900</span>
+                <span class="old-price">Rs.1000</span>
+            </label>
+        </div>
+
+        <div class="option popular">
+            <input type="radio" name="quantity" id="two-unit" onclick="updatePrice(1600, 2)">
+            <label for="two-unit">
+                <span>2 Unit</span> <span class="discount">20% Off</span>
+                <span class="most-popular">MOST POPULAR</span>
+                <span class="price">Rs.1600</span>
+                <span class="old-price">Rs.2000</span>
+            </label>
+            <div class="size-color">
+                <div>
+                    <label>1</label>
+                    <select><option>S</option><option>M</option><option>L</option></select>
+                    <select><option>Black</option><option>Red</option><option>Blue</option></select>
+                </div>
+                <div>
+                    <label>2</label>
+                    <select><option>S</option><option>M</option><option>L</option></select>
+                    <select> <option>Color</option><option>Red</option><option>Blue</option></select>
+                </div>
+            </div>
+        </div>
+
+        <div class="option">
+            <input type="radio" name="quantity" id="three-unit" onclick="updatePrice(2100, 3)">
+            <label for="three-unit">
+                <span>3 Unit</span> <span class="discount">30% Off</span>
+                <span class="price">Rs.2100</span>
+                <span class="old-price">Rs.3000</span>
+            </label>
+        </div>
+
+        <p class="free-delivery">Free Delivery</p>
+        <p class="total-price">Total: Rs<span id="total">900</span></p>
+        <button class="add-to-cart">+ Add to Cart</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
